@@ -1,6 +1,6 @@
 document.getElementById("run-query").addEventListener("click", function () {
   var query = document.getElementById("sql-query").value;
-  fetch("/query", {
+  fetch("http://localhost:3000/run-query", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
